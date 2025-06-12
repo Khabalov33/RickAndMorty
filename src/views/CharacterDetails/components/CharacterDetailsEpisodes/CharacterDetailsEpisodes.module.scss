@@ -1,0 +1,65 @@
+.episodes {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		color: #8e8e93;
+		margin: 0;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		min-height: 64px;
+		padding: 9px 16px 12px 16px;
+		position: relative;
+
+		&::after {
+			content: '';
+
+			position: absolute;
+			bottom: 0;
+			left: 4.3%;
+			background-color: #212121;
+			width: calc(100% - 4.3%);
+			height: 1px;
+			opacity: 0.08;
+		}
+	}
+
+	&__code {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		color: #081f32;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.02em;
+		color: #6e798c;
+	}
+
+	&__air_date {
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 16px;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		color: #8e8e93;
+	}
+}

@@ -1,0 +1,14 @@
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px 20px;
+	margin: 0 0 46px 0;
+
+	&__item {
+		min-width: 240px;
+		min-height: 128px;
+	}
+}

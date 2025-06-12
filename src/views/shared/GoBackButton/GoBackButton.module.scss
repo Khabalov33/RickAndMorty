@@ -1,0 +1,38 @@
+@import '../../../assets/styles/global/variables';
+
+.goBackButton {
+	background-color: initial;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	position: absolute;
+	left: 1px;
+	top: 26px;
+	display: flex;
+	align-items: center;
+	width: 117px;
+	justify-content: space-between;
+	gap: 8px;
+
+	&__icon {
+		transition: transform 0.3s ease;
+	}
+
+	&:hover &__icon {
+		transform: translateX(-10px);
+	}
+
+	&:hover &__text {
+		transform: scale(1.04);
+	}
+
+	&__text {
+		font-family: $ff-second;
+		font-weight: 700;
+		font-size: 18px;
+		color: #000;
+		text-transform: uppercase;
+		line-height: 21px;
+		transition: transform 0.3s ease;
+	}
+}
