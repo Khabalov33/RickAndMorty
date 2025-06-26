@@ -34,7 +34,7 @@ const EpisodesPage = () => {
 					<EpisodesFilter filters={uiFilters} setters={setters} />
 					{!loading && data?.results.length === 0 ? (
 						<NoResults
-							filterValue={uiFilters.filter} // Используем filter
+							filterValue={uiFilters.filter} 
 							className={styles.episodesPage__noResults}
 						/>
 					) : (
